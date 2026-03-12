@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Form, Input, Button } from "antd";
 import { Layout } from "antd";
 import Page from "./pages/lab1";
+import Page2 from "./pages/lab2";
 
 
 const { Header, Content, Footer } = Layout;
@@ -73,6 +74,8 @@ function App() {
        
 
         <Page/>
+        
+        <Page2/>
 
       </div>
 

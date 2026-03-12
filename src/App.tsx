@@ -2,6 +2,8 @@ import { Toaster } from "react-hot-toast";
 import { Link } from "react-router-dom";
 import { Form, Input, Button } from "antd";
 import { Layout } from "antd";
+import Page from "./pages/lab1";
+
 
 const { Header, Content, Footer } = Layout;
 
@@ -9,8 +11,11 @@ function App() {
   const onFinish = (values: any) => {
     console.log(values);
   };
+
+  
   return (
     <>
+
       <nav className="bg-blue-600 text-white shadow">
         <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
           <Link to="#" className="text-xl font-semibold">
@@ -48,15 +53,16 @@ function App() {
         <Button type="dashed">Click me</Button>
         <Button type="link">Click me</Button>
         <Button type="text">Click me</Button>
+
         <Layout>
           <Header style={{ color: "white" }}>Header</Header>
           <Content style={{ padding: 20 }}>
             <Form onFinish={onFinish}>
-              <Form.Item label="Username" name="username">
-                <Input />
+              <Form.Item label="Username" name="fullname">
+                <Input placeholder="username"/>
               </Form.Item>
               <Form.Item>
-                <Button htmlType="submit" type="primary">
+                <Button htmlType="submit" type="default">
                   Submit
                 </Button>
               </Form.Item>
@@ -64,6 +70,10 @@ function App() {
           </Content>
           <Footer>Footer</Footer>
         </Layout>
+       
+
+        <Page/>
+
       </div>
 
       <Toaster />

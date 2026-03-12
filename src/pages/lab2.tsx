@@ -25,12 +25,20 @@ const colum2 = [
         {status}
       </span>
         ),
+    },
+    {title: "Action",
+        key: "action",
+        render:(_:any,record:any) => (
+        <>
+        <button>Edit</button>
+        <button style={{ marginLeft: 8 }}>Delete</button>
+        </>)
     }
 ];
 
 const data2 =[
     {key:1 , name: "Tuan" ,email:"a@gmail.com",status:"active" },
-    {key:1 , name: "Tuan" ,email:"a@gmail.com",status:"inactive" },
+    {key:2 , name: "Tuan" ,email:"a@gmail.com",status:"inactive" },
 
 ];
 

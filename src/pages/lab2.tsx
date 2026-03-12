@@ -1,4 +1,4 @@
-import { Table } from "antd";
+import { Button, Table } from "antd";
 
 
 //bai1
@@ -30,15 +30,15 @@ const colum2 = [
         key: "action",
         render:(_:any,record:any) => (
         <>
-        <button>Edit</button>
-        <button style={{ marginLeft: 8 }}>Delete</button>
+        <Button style={{ background: "orange", color: "white" }}>Edit</Button>
+        <Button style={{ background: "red", color: "white", marginLeft: 8 }}>Delete</Button>
         </>)
     }
 ];
 
 const data2 =[
     {key:1 , name: "Tuan" ,email:"a@gmail.com",status:"active" },
-    {key:2 , name: "Tuan" ,email:"a@gmail.com",status:"inactive" },
+    {key:2 , name: "Tu" ,email:"b@gmail.com",status:"inactive" },
 
 ];
 

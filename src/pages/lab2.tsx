@@ -47,7 +47,7 @@ export default function Page2(){
     return(
         <>
         {/*Bai 1*/}
-    <Table columns={colum} dataSource={data}/>
+    <Table columns={colum} dataSource={data} pagination={{ pageSize: 2 }}/>
     {/* bai 3 */}
     <Table columns={colum2} dataSource={data2}/>
     </>

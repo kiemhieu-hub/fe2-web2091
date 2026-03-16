@@ -4,6 +4,7 @@ import { Form, Input, Button } from "antd";
 import { Layout } from "antd";
 import Page from "./pages/lab1";
 import Page2 from "./pages/lab2";
+import PageLogin from "./pages/lab3";
 
 
 const { Header, Content, Footer } = Layout;
@@ -76,6 +77,9 @@ function App() {
         <Page/>
         
         <Page2/>
+
+        <PageLogin/>
+        
 
       </div>
 

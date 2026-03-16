@@ -46,7 +46,7 @@ const data2 =[
 export default function Page2(){
     return(
         <>
-        {/*Bai 1*/}
+        {/*Bai 1 phân trang làm vào b1*/}
     <Table columns={colum} dataSource={data} pagination={{ pageSize: 2 }}/>
     {/* bai 3 */}
     <Table columns={colum2} dataSource={data2}/>

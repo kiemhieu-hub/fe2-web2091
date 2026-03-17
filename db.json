@@ -1,4 +1,38 @@
 {
   "products": [],
-  "users": []
+  "users": [],
+  "stoties": [
+    {
+      "title": "gsgv",
+      "author": "feaf",
+      "image": "https://tse1.mm.bing.net/th/id/O0000IP.SsnrO7pzZHaycvEAI7gQ2AHaEn?pid=Api&h=220&P=0",
+      "description": "aefaef",
+      "id": 1
+    },
+    {
+      "title": "gsgv",
+      "author": "feaf",
+      "image": "https://tse1.mm.bing.net/th/id/O0000IP.SsnrO7pzZHaycvEAI7gQ2AHaEn?pid=Api&h=220&P=0",
+      "description": "aefaef",
+      "id": 2
+    },
+    {
+      "title": "mèo đen",
+      "author": "odaaaaaaa",
+      "image": "https://tse1.mm.bing.net/th/id/O0000IP.SsnrO7pzZHaycvEAI7gQ2AHaEn?pid=Api&h=220&P=0",
+      "description": "ko co",
+      "id": 3
+    },
+    {
+      "title": "àdsfd",
+      "description": "èwe",
+      "id": 4
+    },
+    {
+      "title": "lão lục",
+      "description": "lão âm hiểm",
+      "active": true,
+      "id": 5
+    }
+  ]
 }

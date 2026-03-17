@@ -1,13 +1,16 @@
 import { Toaster } from "react-hot-toast";
-import { Link } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 import { Form, Input, Button } from "antd";
 import { Layout } from "antd";
 import Page from "./pages/lab1";
 import Page2 from "./pages/lab2";
 import PageLogin from "./pages/lab3";
+import Lab4 from "./pages/lab4test";
+import Lab42 from "./pages/lab4";
 
 
-const { Header, Content, Footer } = Layout;
+
+// const { Header, Content, Footer } = Layout;
 
 function App() {
   const onFinish = (values: any) => {
@@ -25,19 +28,25 @@ function App() {
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="#" className="hover:text-gray-200">
-              Trang chủ
+            <Link to="/lab1" className="hover:text-gray-200">
+              Lab1
             </Link>
-            <Link to="/list" className="hover:text-gray-200">
-              Danh sách
+            <Link to="/lab2" className="hover:text-gray-200">
+              Lab2
             </Link>
-            <Link to="/add" className="hover:text-gray-200">
-              Thêm mới
+            <Link to="/lab3" className="hover:text-gray-200">
+              lab3
+            </Link>
+            <Link to="/lab4" className="hover:text-gray-200">
+              lab4
+            </Link>
+            <Link to="/lab42" className="hover:text-gray-200">
+              lab4,2
             </Link>
           </div>
 
           <div className="hidden md:flex items-center space-x-6">
-            <Link to="#" className="hover:text-gray-200">
+            <Link to="/login" className="hover:text-gray-200">
               Đăng nhập
             </Link>
             <Link to="#" className="hover:text-gray-200">
@@ -50,7 +59,7 @@ function App() {
       {/* MAIN CONTENT */}
       <div className="max-w-6xl mx-auto mt-10 px-4 text-center">
         <h1 className="text-4xl font-bold mb-4">Chào mừng đến với WEB2091</h1>
-        <Button type="primary">Click me</Button>
+        {/* <Button type="primary">Click me</Button>
         <Button type="default">Click me</Button>
         <Button type="dashed">Click me</Button>
         <Button type="link">Click me</Button>
@@ -71,14 +80,16 @@ function App() {
             </Form>
           </Content>
           <Footer>Footer</Footer>
-        </Layout>
+        </Layout> */}
        
+ <Routes>
+          <Route path="/lab1" element={<Page />} />    {/* lab1 */}
+          <Route path="/lab2" element={<Page2 />} />{/* lab2 */}
+          <Route path="/lab3" element={<PageLogin />} />{/* lab3 */}
+          <Route path="/lab4" element={<Lab4 />} />{/* lab4 */}
+          <Route path="/lab42" element={<Lab42 />} />{/* lab4 */}
 
-        <Page/>
-        
-        <Page2/>
-
-        <PageLogin/>
+        </Routes>
         
 
       </div>

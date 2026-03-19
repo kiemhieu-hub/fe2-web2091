@@ -1,9 +1,10 @@
-import { useMutation } from "@tanstack/react-query";
+import { useMutation, useQueryClient } from "@tanstack/react-query";// baif 4 lab5
 import { Button, Checkbox, Form, Input } from "antd";
 import axios from "axios";
 import toast from "react-hot-toast";
 
 export default function lab42() {
+    const queryClient = useQueryClient(); // bai4 lab5
     const mutation = useMutation({
         mutationFn: async (data: any) => {
             await axios.post("http://localhost:3000/stoties", data);

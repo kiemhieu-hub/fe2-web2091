@@ -7,6 +7,7 @@ import Page2 from "./pages/lab2";
 import PageLogin from "./pages/lab3";
 import Lab4 from "./pages/lab4test";
 import Lab42 from "./pages/lab4";
+import { StoryList } from "./pages/lab5";
 
 
 
@@ -42,6 +43,9 @@ function App() {
             </Link>
             <Link to="/lab42" className="hover:text-gray-200">
               lab4,2
+            </Link>
+            <Link to="/lab5" className="hover:text-gray-200">
+              lab5
             </Link>
           </div>
 
@@ -88,6 +92,8 @@ function App() {
           <Route path="/lab3" element={<PageLogin />} />{/* lab3 */}
           <Route path="/lab4" element={<Lab4 />} />{/* lab4 */}
           <Route path="/lab42" element={<Lab42 />} />{/* lab4 */}
+          <Route path="/lab5" element={<StoryList/>} />{/* lab4 */}
+
 
         </Routes>
         

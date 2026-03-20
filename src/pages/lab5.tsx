@@ -1,9 +1,10 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { Button, Image, Popconfirm, Table } from "antd";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export function StoryList() {
-    
+
     const { data, isLoading } = useQuery({
         queryKey: ["getAllStories"],
         queryFn: async () => {
@@ -30,6 +31,10 @@ export function StoryList() {
             dataIndex: "author"
         },
         {
+            title: "mota",
+            dataIndex: "description"
+        },
+        {
             title: "Hinh anh",
             dataIndex: "image",
             render: (src: string) => <Image src={src} height={100} />,
@@ -42,14 +47,19 @@ export function StoryList() {
         {
             title: "Action",
             render: (_: any, record: any) => (
-                <Popconfirm
-                    title="Delete the story"
-                    description="Are you sure to delete this story?"
-                    okText="Yes"
-                    cancelText="No"
-                    onConfirm={() => mutate(record.id)}>
-                    <Button danger>Delete</Button>
-                </Popconfirm>
+                <>
+                    <Popconfirm
+                        title="X"
+                        description="bạn muốn nó bay màu???"
+                        okText="Có"
+                        cancelText="Ko"
+                        onConfirm={() => mutate(record.id)}>
+                        <Button danger>Delete</Button>
+                    </Popconfirm>
+                    <Button type="primary">
+                        <Link to={`/lab6/${record.id}`}>Edit</Link>
+                    </Button>
+                </>
             ),
         },
 

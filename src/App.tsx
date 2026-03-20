@@ -8,6 +8,7 @@ import PageLogin from "./pages/lab3";
 import Lab4 from "./pages/lab4test";
 import Lab42 from "./pages/lab4";
 import { StoryList } from "./pages/lab5";
+import { EditStory } from "./pages/lab6";
 
 
 
@@ -86,16 +87,15 @@ function App() {
           <Footer>Footer</Footer>
         </Layout> */}
        
- <Routes>
+      <Routes>
           <Route path="/lab1" element={<Page />} />    {/* lab1 */}
           <Route path="/lab2" element={<Page2 />} />{/* lab2 */}
           <Route path="/lab3" element={<PageLogin />} />{/* lab3 */}
           <Route path="/lab4" element={<Lab4 />} />{/* lab4 */}
           <Route path="/lab42" element={<Lab42 />} />{/* lab4 */}
-          <Route path="/lab5" element={<StoryList/>} />{/* lab4 */}
-
-
-        </Routes>
+          <Route path="/lab5" element={<StoryList/>} />{/* lab5 */}
+          <Route path="/lab6/:id" element={<EditStory/>} />{/* lab6 - edit */}
+     </Routes>
         
 
       </div>

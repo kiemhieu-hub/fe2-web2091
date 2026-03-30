@@ -4,11 +4,12 @@ import axios from "axios";
 import { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
+
 export function EditStory() {
      const { id } = useParams();
      const navigate = useNavigate();//chuyen trang
     // Lấy dữ liệu chi tiết
-    const { data } = useQuery({
+    const { data, isLoading } = useQuery({
         queryKey: ["story", id],
         queryFn: async () => {
             const res = await axios.get(`http://localhost:3000/stoties/${id}`);
@@ -43,7 +44,7 @@ export function EditStory() {
 });
 
     return (
-        <Form layout="vertical" form={form} onFinish={onFinish} >
+        <Form layout="vertical" form={form} onFinish={onFinish} disabled={isLoading}>
             <Form.Item label="Ten Truyen" name="title"
              rules={[{required:true, message:"Nhap ten truyen"}]}>
                 <Input />
@@ -60,7 +61,7 @@ export function EditStory() {
             <Form.Item name="description" label="Mô tả">
                 <Input.TextArea />
             </Form.Item>
-            <Button htmlType="submit" type="primary" loading={mutation.isPending}>Submit</Button>
+            <Button htmlType="submit" type="primary" loading={mutation.isPending} disabled={isLoading}>Submit</Button>
         </Form>
     );
 }

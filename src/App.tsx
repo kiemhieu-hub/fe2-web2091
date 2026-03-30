@@ -10,6 +10,8 @@ import Lab42 from "./pages/lab4";
 import { StoryList } from "./pages/lab5";
 import { EditStory } from "./pages/lab6";
 
+import Navbar from "./components/Header";
+
 
 
 // const { Header, Content, Footer } = Layout;
@@ -22,8 +24,8 @@ function App() {
   
   return (
     <>
-
-      <nav className="bg-blue-600 text-white shadow">
+     
+      {/* <nav className="bg-blue-600 text-white shadow">
         <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
           <Link to="#" className="text-xl font-semibold">
             <strong>WEB2091 App</strong>
@@ -59,7 +61,8 @@ function App() {
             </Link>
           </div>
         </div>
-      </nav>
+      </nav> */}
+      <Navbar />
 
       {/* MAIN CONTENT */}
       <div className="max-w-6xl mx-auto mt-10 px-4 text-center">
@@ -95,6 +98,8 @@ function App() {
           <Route path="/lab42" element={<Lab42 />} />{/* lab4 */}
           <Route path="/lab5" element={<StoryList/>} />{/* lab5 */}
           <Route path="/lab6/:id" element={<EditStory/>} />{/* lab6 - edit */}
+          <Route path="/lab7" element={<EditStory/>} />{/* lab7 */}
+
      </Routes>
         
 

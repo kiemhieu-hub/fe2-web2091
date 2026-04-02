@@ -1,6 +1,5 @@
 {
   "products": [],
-  "users": [],
   "stoties": [
     {
       "title": "five piece  vvvv",
@@ -16,5 +15,55 @@
       "description": "rgdthfgm",
       "id": 6
     }
-  ]
+  ],
+  "users": [
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$3cvf5QEZ67nFSzYpYScBiOcyghM9w/Y.2HoZs/9ZJC6qccHPv62Cq",
+      "id": 1
+    },
+    {
+      "email": "nguyenhieu4mat@gmail.com",
+      "password": "$2a$10$RtbMk.2KSmlHhcOTgaux9.8coqTKENHZLIck1K3c19wVkG727ccLu",
+      "username": "hieunk123",
+      "id": 2
+    },
+    {
+      "email": "nguyenhieu4mat2@gmail.com",
+      "password": "$2a$10$gspqCr.JaVzwJLMOWuPhnuf5IeLf35y1J.o.smXeZj75Jpuw0OJMy",
+      "username": "hieunk1234",
+      "id": 3
+    },
+    {
+      "email": "nguyenhieu4mat3@gmail.com",
+      "password": "$2a$10$9hTY4GzQH1eTMFYrTe.pZeV1uPpM1JXUQbal62P0XvG.stmWYpxta",
+      "username": "hieunk12345",
+      "id": 4
+    },
+    {
+      "email": "nguyenhieu4mat1@gmail.com",
+      "password": "$2a$10$VhHW/UKUmEBaGLEhGRq3KuBJhk.1Z2jmBUIABbo1f/LqiO5vT7Kle",
+      "username": "abc",
+      "id": 5
+    },
+    {
+      "email": "nguyenhieu4mat5@gmail.com",
+      "password": "$2a$10$frgHBt/CVep6Lev.ah9x9OijndaObiTGQvvZ2Ys4x1f9dF3ykMHQS",
+      "username": "abc",
+      "id": 6
+    },
+    {
+      "email": "nguyenhieu4mat6@gmail.com",
+      "password": "$2a$10$n4XhmSED9OIUzNzwzvilf.HFTrvin6uKUPC9B2rUNRA6aYGtPqpIG",
+      "username": "abc",
+      "id": 7
+    },
+    {
+      "email": "nguyenhieu4mat8@gmail.com",
+      "password": "$2a$10$SOArewF4Dt8Zh6vHAtQtauFH147.w1MHkODpqeTibSQAFOtfueGOS",
+      "username": "Hieu123",
+      "id": 8
+    }
+  ],
+  "register": {}
 }

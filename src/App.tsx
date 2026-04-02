@@ -11,6 +11,8 @@ import { StoryList } from "./pages/lab5";
 import { EditStory } from "./pages/lab6";
 
 import Navbar from "./components/Header";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
 
 
 
@@ -99,6 +101,10 @@ function App() {
           <Route path="/lab5" element={<StoryList/>} />{/* lab5 */}
           <Route path="/lab6/:id" element={<EditStory/>} />{/* lab6 - edit */}
           <Route path="/lab7" element={<EditStory/>} />{/* lab7 */}
+          <Route path="/register" element={<Register/>} />{/* lab7 */}
+          <Route path="/login" element={<Login/>} />{/* lab7 */}
+
+
 
      </Routes>
         

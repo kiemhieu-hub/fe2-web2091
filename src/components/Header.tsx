@@ -51,12 +51,12 @@ export default function Navbar() {
                 </div>
 
                 <div className="flex items-center space-x-6">
-                    {/* Hiển thị user */}
+                    
                     <span>
                         {user ? `Email: ${user.email} (Đã đăng nhập)` : "Chưa đăng nhập"}
                     </span>
 
-                    {/* Login / Logout trong Link */}
+                    
                     {user ? (
                         <button onClick={handleLogout}>Logout</button>
                     ) : (
